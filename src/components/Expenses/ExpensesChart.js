@@ -2,18 +2,18 @@ import Chart from "../Chart/Chart"
 
 const ExpensesChart = (props) => {
     const ChartDataPoints = [
-        {label: 'Jan', value: 0},
-        {label: 'Feb', value: 0},
-        {label: 'Mar', value: 0},
-        {label: 'Apr', value: 0},
-        {label: 'May', value: 0},
-        {label: 'Jun', value: 0},
-        {label: 'Jul', value: 0},
-        {label: 'Aug', value: 0},
-        {label: 'Sept', value: 0},
-        {label: 'Oct', value: 0},
-        {label: 'Nov', value: 0},
-        {label: 'Dec', value: 0}
+        {month: 'Jan', value: 0},
+        {month: 'Feb', value: 0},
+        {month: 'Mar', value: 0},
+        {month: 'Apr', value: 0},
+        {month: 'May', value: 0},
+        {month: 'Jun', value: 0},
+        {month: 'Jul', value: 0},
+        {month: 'Aug', value: 0},
+        {month: 'Sept', value: 0},
+        {month: 'Oct', value: 0},
+        {month: 'Nov', value: 0},
+        {month: 'Dec', value: 0}
     ]
     //Passed in Expenses, use 'of' for array and 'in' for objects
     for (const expense of props.array) {
