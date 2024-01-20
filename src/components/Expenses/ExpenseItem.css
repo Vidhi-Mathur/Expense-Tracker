@@ -15,7 +15,6 @@
     color: white;
 }
 
-/*.expense-item__description */
 .expense-item__title {
     display: flex;
     flex-direction: column;

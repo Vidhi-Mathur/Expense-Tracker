@@ -15,7 +15,6 @@ const NewExpense = (props) => {
 
     const saveExpenseHandler = (prevexpenseData) => {
         const expenseData = {
-            //Saved in expenseForm
             ...prevexpenseData,
             id: Math.random().toString()
         }
@@ -24,9 +23,7 @@ const NewExpense = (props) => {
     }
     return (
         <div className="new-expense">
-            {/* If form isn't displayed, show button else show form */}
             {!form && <button onClick={showFormHandler}>Add Expense</button>}
-            {/* Expected onSaveExp prop from ExpenseForm */}
             {form && <ExpenseForm onSaveExp={saveExpenseHandler} onCancel={removeFormHandler}/>}
         </div>
     )

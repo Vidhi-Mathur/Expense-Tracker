@@ -21,21 +21,18 @@ function App(props) {
       id: 'e3',
       title: 'Home Loan',
       amount: 400,
-      //YYYY/MM/DD
       date: new Date(2023, 10, 4)
     },
     {
       id: 'e4',
       title: 'Mobile',
       amount: 100,
-      //YYYY/MM/DD
       date: new Date(2023, 10, 3)
     }
   ]
 
   const [ expense, setExpense ] = useState(INITIAL_EXPENSES)
 
-  //Triggered wheneever a new expense is added
   const addExpenseHandler = (expenseData) => {
     setExpense((prevExpense) => {
       return [expenseData, ...prevExpense]
